@@ -9,14 +9,14 @@
 	<body>
     <div class="container">
   		<header>
-        <div class="container">
+        <div class="container pull-right">
     			<nav>
-    				<ul class="nav">
-
-              <li>
+    				<ul class="nav justify-content-end">
+              <li class="nav-item btn-nav">
+                <%# need if statement for login/logout%>
                 <a href="/sessions/login"><button class="navButton">Login</button></a>
               </li>
-              <li>
+              <li class="nav-item btn-nav">
                 <a href="/sessions/register"><button class="navButton">Register</button></a>
               </li>
     				</ul>
@@ -24,6 +24,8 @@
         </div>
         <h1>Tales of Travel</h1>
         <a href="/articles">Articles</a>
+        <h3>Most recent posts</h3>
+
   		</header>
     </div>
 	</body>
