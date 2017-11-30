@@ -30,6 +30,8 @@ app.get('/', (req, res)=>{
 	res.render('index.ejs');
 });
 
+app.use(express.static('public'));
+
 const mongoUri = process.env.MONGODB_URI || 'mongodb://localhost:27017/mean-auth-test'
 mongoose.connect(mongoUri);
 
