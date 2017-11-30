@@ -1,3 +1,17 @@
 body {
   background-color: gray;
 }
+
+.nav {
+  list-style: none;
+  margin: 0 auto;
+}
+
+.navButton {
+  width: 100px;
+  margin: 10px;
+  color: white;
+  background-color: navy;
+  border: 0;
+  padding: 10px 0;
+}
