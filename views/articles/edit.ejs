@@ -8,14 +8,15 @@
 	</head>
 	<body>
 		<header>
-			<h1>Edit <%=article.title%>'s Info</h1>
+			<h1>Edit <%=article.name%>'s Info</h1>
 			<nav>
 				<ul>
 					<li>
 						<a href="/">Home</a>
 					</li>
 					<li>
-						<a href="/articles">Articles Index</a>
+						<a href="/articles">Articles Index</a><br/>
+            <small>Added by: <%=user.username%>
 					</li>
 				</ul>
 			</nav>
@@ -23,11 +24,13 @@
 		<main>
 			<h2>Article Attributes:</h2>
 			<form action="/articles/<%=article._id%>?_method=PUT" method="post">
-				
-				<input type="text" name="title" value="<%=article.title%>"/><br/>
-				<textarea name="body"><%=article.body%></textarea><br/>
+				Destination: <input type="text" name="name" value="<%=article.name%>"/><br/>
+        Date: <input type="text" name="date" value="<%=article.date%>"/></br/>
+				Notes: <textarea name="body"><%=article.notes%></textarea><br/>
+        Photos: <input type="text" name="photos" value="<%=article.photos%>"/><br/>
 				<input type="submit" value="Update Article"/>
 			</form>
+
 		</main>
 	</body>
 </html>

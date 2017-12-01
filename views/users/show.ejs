@@ -8,17 +8,11 @@
 	</head>
 	<body>
     <div class="container">
+      <h3>Welcome <%user.username%>!
   		<header>
         <div class="container pull-right">
     			<nav>
     				<ul class="nav justify-content-end">
-              <li class="nav-item btn-nav">
-                <%# need if statement for login/logout%>
-                <a href="/sessions/login"><button class="navButton">Login</button></a>
-              </li>
-              <li class="nav-item btn-nav">
-                <a href="/sessions/register"><button class="navButton">Register</button></a>
-              </li>
               <li class="nav-item btn-nav">
                 <a href="/sessions/logout"><button class="navButton">Log Out</button></a>
               </li>
@@ -27,7 +21,6 @@
         </div>
         <h1>Tales of Travel</h1>
         <a href="/articles">Articles</a>
-        <a href="/users">Users</a>
         <h3>Most recent posts</h3>
 
   		</header>

@@ -22,9 +22,11 @@
 		</header>
 		<main>
 			<form action="/articles" method="post">
-				Destination: <input type="text" name="title" /><br/>
-				Description: <textarea name="body"></textarea><br/>
-				<input type="submit" value="Publish Article"/>
+				Destination: <input type="text" name="name" /><br/>
+        Date: <input type="text" name="date" placeholder="Month Year"><br/>
+				Notes: <textarea name="notes"></textarea><br/>
+        Photos: <input type="text" name="photos"><br/>
+        <input type="submit" value="Publish Article"/>
 			</form>
 		</main>
 	</body>
